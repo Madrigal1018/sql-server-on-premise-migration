@@ -20,7 +20,7 @@ resource "azurerm_resource_group" "rg" {
 
 
 resource "azurerm_data_factory" "df" {
-  name     = "DataFactoryMadrigalAguirre1018"
+  name                = "DataFactoryMadrigalAguirre1018"
   resource_group_name = azurerm_resource_group.rg.name
-  location = azurerm_resource_group.rg.location
+  location            = azurerm_resource_group.rg.location
 }
