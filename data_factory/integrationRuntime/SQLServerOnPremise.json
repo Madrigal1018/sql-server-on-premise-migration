@@ -1,0 +1,7 @@
+{
+	"name": "SQLServerOnPremise",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Migrate data"
+	}
+}
