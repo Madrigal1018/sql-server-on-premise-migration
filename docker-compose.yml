@@ -5,11 +5,17 @@ services:
     container_name: sqlserver_container
     ports:
       - "1433:1433"
+    networks: 
+      - mynetwork
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=<%= ENV['SA_PASSWORD'] %>
+      - SA_PASSWORD=Madrigal123.
     volumes:
       - sqlserver_data:/var/opt/mssql
+networks:
+  mynetwork:
+    driver: bridge
+    
 volumes:
   sqlserver_data:
     driver: local
